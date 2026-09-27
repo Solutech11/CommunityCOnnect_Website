@@ -1,4 +1,4 @@
-import { ArrowUpRight, CalendarDays, MapPin } from "lucide-react";
+import { ArrowUpRight, CalendarDays, MapPin, Sparkles } from "lucide-react";
 import { Link } from "react-router";
 import { motion, useReducedMotion } from "motion/react";
 import { formatDate, formatNaira } from "../lib/api";
@@ -25,7 +25,7 @@ export function EventCard({ event, index = 0 }: { event: Event; index?: number }
 }
 
 export function EmptyState({ title, message }: { title: string; message: string }) {
-  return <div className="empty-state"><span className="empty-orbit">✳</span><h3>{title}</h3><p>{message}</p></div>;
+  return <div className="empty-state"><span className="empty-orbit" aria-hidden="true"><Sparkles size={44} strokeWidth={1.5} /></span><h3>{title}</h3><p>{message}</p></div>;
 }
 
 export function Field({ label, ...props }: React.InputHTMLAttributes<HTMLInputElement> & { label: string }) {
@@ -35,3 +35,4 @@ export function Field({ label, ...props }: React.InputHTMLAttributes<HTMLInputEl
 export function TicketPrice({ priceKobo }: { priceKobo: number }) {
   return <strong>{priceKobo === 0 ? "Free" : formatNaira(priceKobo)}</strong>;
 }
+
