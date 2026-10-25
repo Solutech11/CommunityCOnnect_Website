@@ -16,7 +16,7 @@ export const features = [
     title: "Find your roomie",
     eyebrow: "ROOMMATES",
     description:
-      "Open Roomie from Home, Chat, or Profile. Set up your area, annual rent share, move-in window, and lifestyle in three guided sections, then explore compatible profiles. Mutual likes unlock chat. Contacts require separate consent, and accepting a roommate makes both profiles private.",
+      "Open Roomie from Home, Chat, or Profile. Set up your area, annual rent share, move-in window, and lifestyle in three guided sections, then explore compatible profiles. Like or pass on profiles; mutual likes unlock chat. Contacts require separate consent, and accepting a roommate makes both profiles private.",
     icon: HeartHandshake,
     availability: "Coming in the next app release",
   },
