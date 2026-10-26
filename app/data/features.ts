@@ -1,4 +1,5 @@
 import {
+  Bell,
   CalendarDays,
   Compass,
   HeartHandshake,
@@ -50,6 +51,14 @@ export const features = [
     description:
       "Bring an event idea to life with event publishing, ticket types, and attendee tools.",
     icon: CalendarDays,
+    availability: "In the app",
+  },
+  {
+    title: "See what’s happening",
+    eyebrow: "ACTIVITY & NOTIFICATIONS",
+    description:
+      "Keep up with event, community, chat, ticket, friend, and roommate updates in one filterable feed. Your successful app actions also appear in a private activity log, and verified new accounts receive a welcome email.",
+    icon: Bell,
     availability: "In the app",
   },
   {
